@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """Print State object with the name
    passed as an argument from the 
-   database hbtn_0e_6_usa 
-"""
+   database hbtn_0e_6_usa"""
 
 import sys
 from sqlalchemy import create_engine
