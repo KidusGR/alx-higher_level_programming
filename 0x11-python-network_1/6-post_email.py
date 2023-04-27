@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""a python script that sends a POST requestto the passed URL
+"""
+a python script that sends a POST requestto the passed URL
 with the email as a parameter, and finally displays the body of the response.
 """
 
