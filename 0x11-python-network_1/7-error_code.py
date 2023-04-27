@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-a pyhton script that sends a request to a given URL and displays the response body.
+a python script that sends a request to
+the URL passed in and displays the body of the response.
 """
 
 import sys
@@ -8,9 +9,8 @@ import requests
 
 if __name__ == "__main__":
     url = sys.argv[1]
-
-    m = requests.get(url)
-    if m.status_code >= 400:
-        print("Error code: {}".format(m.status_code))
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
     else:
-        print(m.text)
+        print(r.text)
