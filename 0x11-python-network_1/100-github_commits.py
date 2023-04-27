@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a python script that lists the 10 most recent commits on a given GitHub repository.
+a python script that takes 2 arguments in order to solve this challenge.
 """
 
 import sys
@@ -10,8 +10,8 @@ if __name__ == "__main__":
     url = "https://api.github.com/repos/{}/{}/commits".format(
         sys.argv[2], sys.argv[1])
 
-    r = requests.get(url)
-    commits = r.json()
+    m = requests.get(url)
+    commits = m.json()
     try:
         for i in range(10):
             print("{}: {}".format(
